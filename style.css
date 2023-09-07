@@ -1193,7 +1193,7 @@ input {
         align-items: flex-start;
         flex-direction: column;
         opacity: 1;
-        transition: 0.8s ease-out;
+        transition: 0.7s ease-out;
         pointer-events: all;
         z-index: 996;
         box-shadow: 1px 1px 10px #000;
