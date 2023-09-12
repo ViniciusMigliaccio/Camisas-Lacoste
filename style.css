@@ -526,6 +526,21 @@ input {
     background: rgb(34, 247, 34);
     cursor: pointer;
 }
+.bi-info-circle{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.bi-x-lg{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
 .oculta-modelo {
     position: absolute;
     width: 100%;
@@ -545,6 +560,7 @@ input {
     /* Garante que esteja sobre o .slide */
 }
 
+
 .oculta-modelo s {
     font-size: 12px;
     color: #ccc;
@@ -556,10 +572,15 @@ input {
     transition: 1s;
 }
 
-
-.slide:hover .oculta-modelo {
+.slide.ativar .oculta-modelo {
     opacity: 1;
     pointer-events: all;
+}
+.slide.ativar .bi-info-circle{
+    display: none;
+}
+.slide.ativar .bi-x-lg{
+    display: flex;
 }
 
 .slide img {
@@ -1445,8 +1466,8 @@ input {
         height: 16px;
     }
     .slide img {
-        width: 120%;
-        height: 90%;
+        width: 110%;
+        height: 100%;
     }
 
     .slide h5 {
