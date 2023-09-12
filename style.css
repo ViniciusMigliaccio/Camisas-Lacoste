@@ -549,24 +549,6 @@ input {
     transition: 1s;
 }
 
-.prime-modelo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    transition: opacity 1s;
-    pointer-events: none;
-    /* Evita que o .prime-modelo interfira com cliques */
-    z-index: 0;
-    /* Por padrão, abaixo do .slide e .oculta-modelo */
-}
-
-.slide:hover .prime-modelo {
-    display: none;
-}
-
 .slide:hover .oculta-modelo {
     opacity: 1;
 }
