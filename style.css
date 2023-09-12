@@ -509,13 +509,6 @@ input {
     width: 500%;
     height: 100%;
 }
-.compra{
-    width: 40%;
-    height: 35px;
-    border: 1px solid #202020;
-    border-radius: 3px;
-    background: rgb(34, 247, 34);
-}
 .slide {
     display: flex;
     flex-direction: column;
@@ -525,6 +518,14 @@ input {
     position: relative;
 }
 
+.compra{
+    width: 40%;
+    height: 35px;
+    border: 1px solid #202020;
+    border-radius: 3px;
+    background: rgb(34, 247, 34);
+    cursor: pointer;
+}
 .oculta-modelo {
     position: absolute;
     width: 100%;
@@ -535,7 +536,7 @@ input {
     justify-content: center;
     padding: 20px;
     border-radius: 9px;
-    gap: 8px;
+    gap: 10px;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     transition: opacity .4s;
@@ -545,8 +546,8 @@ input {
 }
 
 .oculta-modelo s {
-    font-size: 13px;
-    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+    color: #ccc;
 }
 
 .text-oculto {
@@ -555,8 +556,10 @@ input {
     transition: 1s;
 }
 
+
 .slide:hover .oculta-modelo {
     opacity: 1;
+    pointer-events: all;
 }
 
 .slide img {
