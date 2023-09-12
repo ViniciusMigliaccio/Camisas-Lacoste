@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     /*Fim*/
 
-     /*Icone informaçaõ*/
+     /*Icone informação*/
 
     const infoButtons = document.querySelectorAll(".bi-info-circle");
     const slides = document.querySelectorAll(".slide");
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-/*Fim*/
+    /*Fim*/
     /*Botao sobe*/
 
     window.addEventListener("scroll", function () {
