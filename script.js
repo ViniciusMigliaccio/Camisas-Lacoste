@@ -29,7 +29,26 @@ document.addEventListener('DOMContentLoaded', function () {
     hamburger.addEventListener("click", () => header.classList.toggle("ativo"));
 
     /*Fim*/
-    
+
+     /*Icone informaçaõ*/
+
+    const infoButtons = document.querySelectorAll(".bi-info-circle");
+    const slides = document.querySelectorAll(".slide");
+    const closeButtons = document.querySelectorAll(".bi-x-lg");
+
+    infoButtons.forEach((infoButton, index) => {
+        // Adiciona um evento de clique para cada botão de informação
+        infoButton.addEventListener("click", () => {
+            slides[index].classList.toggle("ativar");
+        });
+
+        // Adiciona um evento de clique para cada botão de fechar
+        closeButtons[index].addEventListener("click", () => {
+            slides[index].classList.remove("ativar");
+        });
+    });
+
+/*Fim*/
     /*Botao sobe*/
 
     window.addEventListener("scroll", function () {
