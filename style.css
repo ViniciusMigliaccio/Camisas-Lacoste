@@ -590,6 +590,7 @@ input {
 
 .slide h5 {
     display: flex;
+    gap: 5px;
     font-size: 18px;
     font-weight: 400;
 }
@@ -1466,7 +1467,7 @@ input {
     }
     .slide img {
         width: 105%;
-        height: 100%;
+        height: 90%;
     }
 
     .slide h5 {
