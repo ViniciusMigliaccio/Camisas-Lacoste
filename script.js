@@ -78,7 +78,6 @@ function validar() {
     const usernameValue = username.value;
     const emailValue = email.value;
     const telefoneValue = telefone.value;
-    const clearValue = clear.value
 
     if (usernameValue === "") {
         setErrorFor(username, "Digite seu nome.");
@@ -113,27 +112,27 @@ function validar() {
         form.telefone.focus();
         return false;
     }
-    else if (telefoneValue.length < 11) {
-        setErrorFor(telefone, "Por favor, insira o número com DDD.");
-        form.telefone.focus();
-        return false;
-    }
     else {
         setSuccessFor(telefone);
     }
 
-    clear.addEventListener("click", () => {
-        // Chame a função setErrorFor para os campos que estavam vermelhos // 
-        setErrorFor(username, "digite seu nome");
-        setErrorFor(email, "O email é obrigatório.");
-    });
 
     enviar.addEventListener("click", () => {
+
         // após todo o codigo enviado, indo para 'index.html'
         alert('Seus dados foram registrados com sucesso!!                                           Logo entraremos em contato :)');
         window.location.href = 'index.html';
     });
 }
+
+clear.addEventListener("click", () => {
+    setErrorFor(username, "Digite seu nome.");
+    form.username.focus();
+    setErrorFor(email, "O email é obrigatório.");
+    setErrorFor(telefone, "O Número de telefone é obrigatório.");
+});
+
+
 
 
 
