@@ -509,7 +509,13 @@ input {
     width: 500%;
     height: 100%;
 }
-
+.compra{
+    width: 40%;
+    height: 35px;
+    border: 1px solid #202020;
+    border-radius: 3px;
+    background: rgb(34, 247, 34);
+}
 .slide {
     display: flex;
     flex-direction: column;
