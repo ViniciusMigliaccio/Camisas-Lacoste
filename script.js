@@ -67,6 +67,11 @@ const telefone = document.getElementById("telefone");
 const clear = document.getElementById("clear");
 const enviar = document.getElementById("submit");
 
+function limparClasses(input) {
+    const formControl = input.parentElement;
+    formControl.classList.remove("success");
+    formControl.classList.remove("error");
+}
 
 form.addEventListener("submit", (e) => {
     if (!validar()) {
@@ -126,14 +131,10 @@ function validar() {
 }
 
 clear.addEventListener("click", () => {
-    setErrorFor(username, "Digite seu nome.");
-    form.username.focus();
-    setErrorFor(email, "O email é obrigatório.");
-    setErrorFor(telefone, "O Número de telefone é obrigatório.");
+    limparClasses(username);
+    limparClasses(email);
+    limparClasses(telefone);
 });
-
-
-
 
 
 function setErrorFor(input, message) {
@@ -166,4 +167,4 @@ function checkEmail(email) {
         email
     );
 }
-
+}
