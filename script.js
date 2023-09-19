@@ -60,8 +60,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /*Contato*/
 
-/*Contato*/
-
 const form = document.getElementById("form");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
@@ -69,11 +67,6 @@ const telefone = document.getElementById("telefone");
 const clear = document.getElementById("clear");
 const enviar = document.getElementById("submit");
 
-function limparClasses(input) {
-    const formControl = input.parentElement;
-    formControl.classList.remove("success");
-    formControl.classList.remove("error");
-}
 
 form.addEventListener("submit", (e) => {
     if (!validar()) {
@@ -122,8 +115,7 @@ function validar() {
     else {
         setSuccessFor(telefone);
     }
-
-
+    
     enviar.addEventListener("click", () => {
 
         // após todo o codigo enviado, indo para 'index.html'
@@ -132,12 +124,16 @@ function validar() {
     });
 }
 
+function limparClasses(input) {
+    const formControl = input.parentElement;
+    formControl.classList.remove("success");
+    formControl.classList.remove("error");
+}
 clear.addEventListener("click", () => {
     limparClasses(username);
     limparClasses(email);
     limparClasses(telefone);
 });
-
 
 
 
