@@ -55,8 +55,9 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener("scroll", function () {
         let sobe = document.querySelector('#sobe')
         sobe.classList.toggle('rolagem', window.scrollY > 0)
-    })
+    });
 });
+
 
 /*Contato*/
 
@@ -167,5 +168,6 @@ function checkEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
         email
     );
+}
 }
 
