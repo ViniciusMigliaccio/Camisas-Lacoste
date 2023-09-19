@@ -169,5 +169,3 @@ function checkEmail(email) {
         email
     );
 }
-}
-
