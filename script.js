@@ -60,6 +60,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /*Contato*/
 
+/*Contato*/
+
 const form = document.getElementById("form");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
@@ -137,6 +139,9 @@ clear.addEventListener("click", () => {
 });
 
 
+
+
+
 function setErrorFor(input, message) {
     const formControl = input.parentElement;
     const small = formControl.querySelector("small");
@@ -167,4 +172,4 @@ function checkEmail(email) {
         email
     );
 }
-}
+
